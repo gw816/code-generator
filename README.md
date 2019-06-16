@@ -1,5 +1,6 @@
 # code-generator
 代码生成器
+
 核心功能已经完善。
 后期重点工作是修改自己需要的模版，修改前先了解一下freemarker语法。
 代码中已包含多版本的模版，不同类型的生成模版参差不齐，可以选择生成jpa\mybatis\hibernate\jdbc等风格的代码，前端可以分为ng\seajs等版本，目前维护较为全面的是jpa，基本可用的有mybatis和jdbc，hibernate写的最简陋。
