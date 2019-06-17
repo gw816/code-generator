@@ -14,8 +14,13 @@
 目前有mysql和oracle两类生成器实现，如果有其它数据的生成器，需要自己继承Gen实现相关方法即可。
 
 需要Gradle或者Maven的自己配置依赖：
+
+```groovy
 compile group: 'org.freemarker', name: 'freemarker', version: '2.3.20'
 compile group: 'commons-dbutils', name: 'commons-dbutils', version: '1.6'
 compile group: 'ojdbc', name: 'ojdbc', version: '14'
 compile 'commons-io:commons-io:2.4'
 compile("mysql:mysql-connector-java")
+```
+
+
