@@ -32,9 +32,9 @@ public class ${tableNamePojoNameMap[tableName]} implements Serializable{
 	@Column(name = "${columnName}")
 	//@GeneratedValue(strategy=GenerationType.IDENTITY)
 	<#if columnCommentsMap[tableName + "|" + columnName]?exists>
-	@ApiModelProperty(name = "${columnCommentsMap[tableName + "|" + columnName]}")
+	@ApiModelProperty("${columnCommentsMap[tableName + "|" + columnName]}")
 	<#else>
-	@ApiModelProperty(name = "${columnJavaName}")
+	@ApiModelProperty("${columnJavaName}")
 	</#if>
 	private ${columnJavaType} ${columnJavaName};
 	</#list>
@@ -49,9 +49,9 @@ public class ${tableNamePojoNameMap[tableName]} implements Serializable{
 	</#if>
 	@Column(name = "${columnName}")
 	<#if columnCommentsMap[tableName + "|" + columnName]?exists>
-	@ApiModelProperty(name = "${columnCommentsMap[tableName + "|" + columnName]}")
+	@ApiModelProperty("${columnCommentsMap[tableName + "|" + columnName]}")
 	<#else>
-	@ApiModelProperty(name = "${columnJavaName}")
+	@ApiModelProperty("${columnJavaName}")
 	</#if>
 	private ${columnJavaType} ${columnJavaName};
 	</#list>
